@@ -19,7 +19,8 @@ The first VM becomes `DC-01`
 
 **Creating a Windows Server VM:**
 <img width="900" height="446" alt="Screenshot 2026-07-25 at 4 56 11 PM" src="https://github.com/user-attachments/assets/7eae2698-cb85-422a-a36f-ed4ffdb67242" />
-`VM was subsequently renamed DC-01...`
+
+`The VM was subsequently renamed DC-01...`
 
 ## Connecting over RDP
 Once the VM was deployed
