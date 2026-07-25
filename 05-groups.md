@@ -29,3 +29,10 @@ Distribution lists are created in the same way as security groups, these too exi
 | `DL-ATTORNEYS` | Partners + Associates | 
 | `DL-PARTNERS`  | Partners only         |
 | `DL-SUPPORT`   | Paralegals            |
+
+
+**Security and Distribution Groups created:**
+<img width="1053" height="602" alt="Screenshot 2026-07-25 at 5 12 41 PM" src="https://github.com/user-attachments/assets/f82d7060-7b20-4cae-949b-7617777fc5e7" />
+
+**Users manually added to security/distribution groups:**
+<img width="1053" height="602" alt="Screenshot 2026-07-25 at 5 13 52 PM" src="https://github.com/user-attachments/assets/3d58eda0-cf1f-40dd-8d89-bdb6dd55d5e1" />
