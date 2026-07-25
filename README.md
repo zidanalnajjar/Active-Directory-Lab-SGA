@@ -4,11 +4,14 @@
 This is a hands-on Active Directory lab built for a fictional law firm, hosted on Microsoft Azure. This lab covers the full lifecycle of a small Windows domain: designing the directory on paper, standing up a domain controller and file server, provisioning users and groups, locking down file-share permissions and hardening the environment with Group Policy.
 
 Because of the scenario, that is, being a law firm, design choices were driven by constraints such as client confidentality, billing seperation, and legal compliance/auditing requirements.
+
 ---
 
 ## Why a law firm?
+---
 
 Framing the lab around a real world-organization forced every technical decision to have a reason behind it rather than being configured for its own sake. Partners can see all case files; associates can only see case files they're assigned; paralegals get read-only; billing is walled off; and IT is exempted from these constraints so that they can actually adminsister the machines. These business constraints map directly onto the OUs, security groups, NTFS permissions, and GPOs.
+
 ---
 
 ## Architecture 
