@@ -39,10 +39,24 @@ For domain-join to work, the file server has to resolve `sga.local`, which means
 
 The DC and file server needed to reach each other across Azure networking, requiring **Virtual Network Peering** between their VNets. Once peered, the two servers could communicate and domain-join succeeded.
 
+**Successful VNET pairing between the servers:**
+<img width="2374" height="1208" alt="Screenshot 2026-07-25 at 17-40-58" src="https://github.com/user-attachments/assets/20c4bd28-105f-47d4-a628-eb4216e9e6c3" />
+
 ## Joining the domain
 
 1. `Settings` -> `System` -> `Domain and Workgroup`
 2. Enter the domain: `sga.local`
+
+**Joining the file server to domain (1):**
+<img width="1081" height="646" alt="Screenshot 2026-07-25 at 5 42 01 PM" src="https://github.com/user-attachments/assets/2f279829-5cef-44cc-bbaa-058bba4e075e" />
+
+**Joining the file server to domain (2):**
+You will be prompted to input your admin credentials
+<img width="1081" height="648" alt="Screenshot 2026-07-25 at 5 42 56 PM" src="https://github.com/user-attachments/assets/862408ed-c7a2-4c3e-af4a-b9e2f712d85d" />
+
+**Joining the file server to domain (3):**
+The file server has sucessfully been joined to the domain
+<img width="1081" height="648" alt="Screenshot 2026-07-25 at 5 43 46 PM" src="https://github.com/user-attachments/assets/5c30c102-b2dc-465d-8164-38870f8ca1fb" />
 
 ## Installing the File Server role
 
@@ -50,6 +64,10 @@ From Server Manager on `FILE-SERV01`:
 1. `Add Roles and Features`-> `Next` -> `Next` -> `Next`
 2. Under roles, expand `File and Storage Services`, then expand again make sure `File Server` is checked
 3. Select `Next` -> `Install`
+
+**Confirmation of roles on installation wizard:**
+<img width="1081" height="648" alt="Screenshot 2026-07-25 at 5 45 12 PM" src="https://github.com/user-attachments/assets/b446d208-7d7a-4a22-ac8e-208ef27c51c5" />
+
 
 ## Creating the shared folders
 In File Explorer, create four folders on the **C:drive:**
