@@ -14,6 +14,9 @@ In Group Policy Management, right-click `sga.local` -> Create a GPO in this doma
 
 **Justification** — Everyone at the firm handles confidential client data. Weak or reused passwords are one of the easiest ways into a network, so a strong baseline is non-negotiable when client confidentiality is on the line.
 
+**Screenshot:**
+<img width="1001" height="602" alt="Screenshot 2026-07-25 at 5 55 05 PM" src="https://github.com/user-attachments/assets/f3a81e3f-4db8-423b-94cf-df601cd69cfe" />
+
 ## Audit Policy
 
 **Overview** — Enables auditing so that access and security-relevant events are logged.
@@ -21,6 +24,10 @@ In Group Policy Management, right-click `sga.local` -> Create a GPO in this doma
 **Settings** - 
 
 **Justification** — Logging all access is a legal compliance requirement for a firm handling privileged client information. If something is ever questioned, there needs to be an audit trail.
+
+**Screenshot:**
+<img width="1001" height="602" alt="Screenshot 2026-07-25 at 5 57 19 PM" src="https://github.com/user-attachments/assets/a513dbf7-39de-479d-8da2-e7130921e6bf" />
+
 
 ## USB Block Policy
 
@@ -53,3 +60,9 @@ In Group Policy Management, right-click `sga.local` -> Create a GPO in this doma
 **Settings** -
 
 **Justification** — Unauthorized software is a common malware vector and a compliance risk. Restricting installs keeps the firm's endpoints to a known, approved software set.
+
+## Screen Lock Policy
+
+**Screenshot:**
+<img width="1001" height="602" alt="Screenshot 2026-07-25 at 5 55 59 PM" src="https://github.com/user-attachments/assets/b37ad6e7-8ded-4c53-ade6-0c56c8106bfb" />
+
