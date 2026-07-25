@@ -51,10 +51,12 @@ The DC and file server needed to reach each other across Azure networking, requi
 <img width="1081" height="646" alt="Screenshot 2026-07-25 at 5 42 01 PM" src="https://github.com/user-attachments/assets/2f279829-5cef-44cc-bbaa-058bba4e075e" />
 
 **Joining the file server to domain (2):**
+
 You will be prompted to input your admin credentials
 <img width="1081" height="648" alt="Screenshot 2026-07-25 at 5 42 56 PM" src="https://github.com/user-attachments/assets/862408ed-c7a2-4c3e-af4a-b9e2f712d85d" />
 
 **Joining the file server to domain (3):**
+
 The file server has sucessfully been joined to the domain
 <img width="1081" height="648" alt="Screenshot 2026-07-25 at 5 43 46 PM" src="https://github.com/user-attachments/assets/5c30c102-b2dc-465d-8164-38870f8ca1fb" />
 
@@ -76,6 +78,9 @@ In File Explorer, create four folders on the **C:drive:**
 - `SharedDrive`
 - `IT`
 
+**Creation of shared folders:**
+<img width="2429" height="1422" alt="Screenshot 2026-07-25 at 17-49-03" src="https://github.com/user-attachments/assets/1dba7357-6e9a-4873-a492-3c95c565c6b8" />
+
 ## Assigning permissions by security group
 For each folder: Properties -> Sharing tab -> Advanced Sharing -> Share this folder -> Permissions, then remove `Everyone` and add the appropriate security groups. You will most likely be prompted for admin credentials. 
 
@@ -92,3 +97,18 @@ For each folder: Properties -> Sharing tab -> Advanced Sharing -> Share this fol
 |               | `SG-ADMIN`          | Change          |
 |               | `SG-IT`             | Full Control    |
 |**IT**         | `SG-IT`             | Full Control    |
+
+
+**CaseFiles Share Permissions:**
+<img width="1081" height="648" alt="Screenshot 2026-07-25 at 5 51 07 PM" src="https://github.com/user-attachments/assets/289dc2f2-0f05-4a55-ba78-0f3179809307" />
+
+**Billing Share Permissions:**
+<img width="1081" height="648" alt="Screenshot 2026-07-25 at 5 51 44 PM" src="https://github.com/user-attachments/assets/6c2eddcd-3f9b-40ec-bb5e-ba2ac44cc621" />
+
+**SharedDrive Share Permissions:**
+<img width="1081" height="648" alt="Screenshot 2026-07-25 at 5 52 19 PM" src="https://github.com/user-attachments/assets/069a83db-38ad-4cb8-a0a9-cb95c3686130" />
+
+**IT Share Permissions:**
+<img width="1081" height="648" alt="Screenshot 2026-07-25 at 5 52 40 PM" src="https://github.com/user-attachments/assets/c6d06247-6cc3-45af-b789-ad32d3da3660" />
+
+
