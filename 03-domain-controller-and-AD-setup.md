@@ -12,6 +12,9 @@ From Server Manager:
 5. Click **Next** through the remaining screens
 6. Click **Install**
 
+**AD Installation Wizard confirmation screen**
+<img width="1240" height="721" alt="Screenshot 2026-07-25 at 5 04 58 PM" src="https://github.com/user-attachments/assets/29ffca70-167b-407d-a23c-212bd1512040" />
+
 ## Promoting domain controller
 
 After the role installs, Server Manager shows a yellow triangle notification to complete the promotion.
@@ -26,6 +29,15 @@ After the role installs, Server Manager shows a yellow triangle notification to 
 
 Now, this Windows server is set as the domain controller for `sga.local`.
 
+**Notification message:**
+<img width="970" height="293" alt="Screenshot 2026-07-25 at 5 06 28 PM" src="https://github.com/user-attachments/assets/59c44072-bdb7-4235-a287-7c4308e82130" />
+
+**AD Domain Services configuration wizard:**
+<img width="970" height="531" alt="Screenshot 2026-07-25 at 5 08 09 PM" src="https://github.com/user-attachments/assets/74d612f0-5bac-424d-8f5c-b4d6a274bcbd" />
+
+**AD installation in progress...**
+<img width="970" height="577" alt="Screenshot 2026-07-25 at 5 09 01 PM" src="https://github.com/user-attachments/assets/25472806-9db7-4376-a094-4df64816167d" />
+
 ## Creating the Organizational Units (OUs)
 
 Open `Tools` -> `Active Directory Users and Computers (AD U&C)`
@@ -34,6 +46,9 @@ On the **Top-level OUs**, right-click `sga.local` -> `New` -> `Organizational Un
 - `SGA-USERS`
 - `SGA-COMPUTERS`
 - `SGA-GROUPS`
+
+**Top-level OUs:**
+<img width="1086" height="635" alt="Screenshot 2026-07-25 at 5 10 00 PM" src="https://github.com/user-attachments/assets/158e4c6e-0a77-464e-a0e9-dbfb341872d6" />
 
 Leave the **"Protect container from accidental deletion"** checkbox ticked, as its good practice, on each OU.
 
@@ -45,4 +60,7 @@ For creating the **Sub-OUs** under `SGA-USERS`, its the same process, right-clic
 - `IT`
 
 It's important that these sub-OU names match the `Department` column in the user CSV list, as when it comes time for provisioning, the PowerShell script can place each user into the correct OU automatically. 
+
+**Sub-OUs:**
+<img width="1086" height="635" alt="Screenshot 2026-07-25 at 5 10 43 PM" src="https://github.com/user-attachments/assets/e421ca08-8bbb-49c4-99c5-bd68a5adabc9" />
 
