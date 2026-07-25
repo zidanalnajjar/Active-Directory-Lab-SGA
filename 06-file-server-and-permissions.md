@@ -27,8 +27,13 @@ For domain-join to work, the file server has to resolve `sga.local`, which means
 3. Confirm the DNS was set by running `ipconfig/all` on the file server.
 
 **Getting the IP address on the domain controller:**
+<img width="1817" height="1023" alt="Screenshot 2026-07-25 at 17-34-05" src="https://github.com/user-attachments/assets/f0df8851-4514-4cb2-95df-ba8a339deb6e" />
 
+**Pointing the file server to the DC for DNS:**
+<img width="915" height="544" alt="Screenshot 2026-07-25 at 5 36 10 PM" src="https://github.com/user-attachments/assets/887c3c4a-7aea-4514-82da-b9a53cb39d35" />
 
+**Confirming DNS was set on file server:**
+<img width="1578" height="1074" alt="Screenshot 2026-07-25 at 17-38-18" src="https://github.com/user-attachments/assets/7681d2c0-9665-44ca-86b7-663f7425c13e" />
 
 ## Virtual network peering
 
