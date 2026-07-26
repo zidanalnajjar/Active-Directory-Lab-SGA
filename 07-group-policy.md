@@ -10,20 +10,23 @@ In Group Policy Management, right-click `sga.local` -> Create a GPO in this doma
 
 **Overview** — Enforces strong password requirements across the domain.
 
-**Settings** - 
+**Path**  
+
+`Computer Configuration -> Policies -> Windows Settings -> Security Settings -> Account Policies -> Password Policy`
 
 **Justification** — Everyone at the firm handles confidential client data. Weak or reused passwords are one of the easiest ways into a network, so a strong baseline is non-negotiable when client confidentiality is on the line.
 
 **Screenshot:**
 <img width="1001" height="602" alt="Screenshot 2026-07-25 at 5 55 05 PM" src="https://github.com/user-attachments/assets/f3a81e3f-4db8-423b-94cf-df601cd69cfe" />
 
+---
 ## Audit Policy
 
 **Overview** — Enables auditing so that access and security-relevant events are logged.
 
-**Settings** - 
+**Path**
 
-**Justification** — Logging all access is a legal compliance requirement for a firm handling privileged client information. If something is ever questioned, there needs to be an audit trail.
+`Computer Configuration -> Policies -> Windows Settings -> Security Settings -> Local Policies -> Audit Policies`
 
 **Screenshot:**
 <img width="1001" height="602" alt="Screenshot 2026-07-25 at 5 57 19 PM" src="https://github.com/user-attachments/assets/a513dbf7-39de-479d-8da2-e7130921e6bf" />
@@ -33,10 +36,9 @@ In Group Policy Management, right-click `sga.local` -> Create a GPO in this doma
 
 **Overview** — Denies access to all removable storage classes.
 
-**Settings** - 
-| Setting                                        | Path                                                                                                   | Value   | 
-|------------------------------------------------|--------------------------------------------------------------------------------------------------------|---------| 
-| All Removable Storage classes: Deny all access | `Computer Configuration -> Policies -> Administrative Templates -> System -> Removable Storage Access` | Enabled | 
+**Path**
+
+`Computer Configuration -> Policies -> Administrative Templates -> System -> Removable Storage Access` 
 
 **Justification** — Blocking USB storage prevents client files from being copied off a machine and walked out the door.
 
@@ -49,9 +51,10 @@ In Group Policy Management, right-click `sga.local` -> Create a GPO in this doma
 **Overview** — Prevents removable devices from being installed at the device level.
 
 **Settings** -
-| Setting                                   | Path                                                                                                                                 | Value   |
-|-------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------|---------|
-| Prevent installation of removable devices | `Computer Configuration -> Policies -> Administrative Templates -> System -> Device Installation -> Device Installation Restrictions | Enabled |  
+
+**Path**
+
+`Computer Configuration -> Policies -> Administrative Templates -> System -> Device Installation -> Device Installation Restrictions`
 
 **Justification** — Device-level enforcement backs up the USB block above — even if a policy is bypassed at one layer, the device simply won't install.
 
@@ -63,10 +66,9 @@ In Group Policy Management, right-click `sga.local` -> Create a GPO in this doma
 
 **Overview** — Blocks non-IT users from opening Control Panel and PC settings.
 
-**Settings** - 
-| Setting                                          | Path                                                                          | Value   |
-|--------------------------------------------------|-------------------------------------------------------------------------------|---------|
-| Prohibit access to Control Panel and PC settings | `User Configuration -> Policies -> Administrative Templates -> Control Panel` | Enabled | 
+**Path**
+
+`User Configuration -> Policies -> Administrative Templates -> Control Panel` 
 
 **Justification** — Regular staff shouldn't be changing system settings; keeping Control Panel out of their hands prevents accidental (or deliberate) misconfiguration.
 
@@ -78,10 +80,8 @@ In Group Policy Management, right-click `sga.local` -> Create a GPO in this doma
 
 **Overview** - Automatically locks an unattended machine after a specified period of inactivity.
 
-**Settings** - 
-| Setting                                     | Path                                                                                                               | Value                   |
-|---------------------------------------------|--------------------------------------------------------------------------------------------------------------------|-------------------------|
-| Interactive logon: Machine inactivity limit | `Computer Configuration -> Policies -> Windows Settings -> Security Settings -> Local Policies -> Security Options | 300 seconds (5 minutes) |
+**Path**
+`Computer Configuration -> Policies -> Windows Settings -> Security Settings -> Local Policies -> Security Options`
 
 **Justification** - Confidential information shouldn't be left exposed on an unattended screen in an office where clients and visitors are present.
 
