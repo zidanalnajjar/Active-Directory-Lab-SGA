@@ -45,9 +45,7 @@ In Group Policy Management, right-click `sga.local` -> Create a GPO in this doma
 **Overview** — Prevents removable devices from being installed at the device level.
 
 **Settings** 
-| Setting                                     | Path                                                                                                               | Value                   |
-|---------------------------------------------|--------------------------------------------------------------------------------------------------------------------|-------------------------|
-| Interactive logon: Machine inactivity limit | `Computer Configuration -> Policies -> Windows Settings -> Security Settings -> Local Policies -> Security Options | 300 seconds (5 minutes) |
+
 
 **Justification** — Device-level enforcement backs up the USB block above — even if a policy is bypassed at one layer, the device simply won't install.
 
@@ -69,7 +67,10 @@ In Group Policy Management, right-click `sga.local` -> Create a GPO in this doma
 
 **Overview** - Automatically locks an unattended machine after a specified period of inactivity.
 
-**Settings** - 
+**Settings** 
+| Setting                                     | Path                                                                                                               | Value                   |
+|---------------------------------------------|--------------------------------------------------------------------------------------------------------------------|-------------------------|
+| Interactive logon: Machine inactivity limit | `Computer Configuration -> Policies -> Windows Settings -> Security Settings -> Local Policies -> Security Options | 300 seconds (5 minutes) |
 
 **Justification** - Confidential information shouldn't be left exposed on an unattended screen in an office where clients and visitors are present.
 
