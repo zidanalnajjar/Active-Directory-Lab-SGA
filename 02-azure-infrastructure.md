@@ -29,7 +29,7 @@ Once the VM was deployed
 3. Connected through Microsoft Remote Desktop using the IP from step 2
 
 **Grabbing the VM IP:**
-<img width="2691" height="1283" alt="Screenshot 2026-07-25 at 16-59-59" src="https://github.com/user-attachments/assets/bcc75244-adc5-466c-ba7e-355dc9f63c6f" />
+<img width="1722" height="875" alt="Screenshot 2026-07-25 at 21-33-12" src="https://github.com/user-attachments/assets/531ab416-f6c7-44a4-a2e3-533ff526ca30" />
 
 **Connecting through RDP with the IP:**
 <img width="1861" height="1108" alt="Screenshot 2026-07-25 at 17-03-37" src="https://github.com/user-attachments/assets/9d30b69d-e9b6-4233-8326-8084d22ca6fa" />
