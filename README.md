@@ -32,7 +32,7 @@ Framing the lab around a real world-organization forced every technical decision
 
 ## Environment details
 - **Domain/forest:** `sga.local` (new forest)
-- **Domain controller:** `DC-01` (also DNS) - `10.0.0.5`
+- **Domain controller:** `DC-01` (also DNS)
 - **File server:** `FILE-SERV01`(domain joined)
 
 ## Resources 
