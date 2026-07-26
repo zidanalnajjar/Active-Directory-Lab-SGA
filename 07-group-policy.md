@@ -37,13 +37,22 @@ In Group Policy Management, right-click `sga.local` -> Create a GPO in this doma
 
 **Justification** — Blocking USB storage prevents client files from being copied off a machine and walked out the door.
 
+**Screenshot:**
+<img width="1121" height="665" alt="Screenshot 2026-07-25 at 7 45 43 PM" src="https://github.com/user-attachments/assets/bdc13225-c7f7-4209-a9a5-5f0b255e17b6" />
+
 ## Disable Removable Media Policy
 
 **Overview** — Prevents removable devices from being installed at the device level.
 
-**Settings** - 
+**Settings** 
+| Setting                                     | Path                                                                                                               | Value                   |
+|---------------------------------------------|--------------------------------------------------------------------------------------------------------------------|-------------------------|
+| Interactive logon: Machine inactivity limit | `Computer Configuration -> Policies -> Windows Settings -> Security Settings -> Local Policies -> Security Options | 300 seconds (5 minutes) |
 
 **Justification** — Device-level enforcement backs up the USB block above — even if a policy is bypassed at one layer, the device simply won't install.
+
+**Screenshot:**
+<img width="998" height="601" alt="Screenshot 2026-07-25 at 7 54 52 PM" src="https://github.com/user-attachments/assets/b845717c-ce34-410e-bf9c-86ab8ce57fc5" />
 
 ## Restrict Control Panel Policy
 
@@ -53,15 +62,16 @@ In Group Policy Management, right-click `sga.local` -> Create a GPO in this doma
 
 **Justification** — Regular staff shouldn't be changing system settings; keeping Control Panel out of their hands prevents accidental (or deliberate) misconfiguration.
 
-## Software Restriction Policy
-
-**Overview** — Prevents users from installing/running unauthorized software.
-
-**Settings** -
-
-**Justification** — Unauthorized software is a common malware vector and a compliance risk. Restricting installs keeps the firm's endpoints to a known, approved software set.
+**Screenshot:**
+<img width="1247" height="711" alt="Screenshot 2026-07-25 at 7 55 26 PM" src="https://github.com/user-attachments/assets/2728ebb7-3e79-4f21-82af-cf29b6e95dc0" />
 
 ## Screen Lock Policy
+
+**Overview** - Automatically locks an unattended machine after a specified period of inactivity.
+
+**Settings** - 
+
+**Justification** - Confidential information shouldn't be left exposed on an unattended screen in an office where clients and visitors are present.
 
 **Screenshot:**
 <img width="1001" height="602" alt="Screenshot 2026-07-25 at 5 55 59 PM" src="https://github.com/user-attachments/assets/b37ad6e7-8ded-4c53-ade6-0c56c8106bfb" />
