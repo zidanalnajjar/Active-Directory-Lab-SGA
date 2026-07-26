@@ -8,10 +8,7 @@ Because of the scenario, that is, being a law firm, design choices were driven b
 
 Framing the lab around a real world-organization forced every technical decision to have a reason behind it rather than being configured for its own sake. Partners can see all case files; associates can only see case files they're assigned; paralegals get read-only; billing is walled off; and IT is exempted from these constraints so that they can actually adminsister the machines. These business constraints map directly onto the OUs, security groups, NTFS permissions, and GPOs.
 
-
 ## Architecture 
-
-
 
 ## What was built
 
@@ -35,3 +32,8 @@ Framing the lab around a real world-organization forced every technical decision
 - **Domain/forest:** `sga.local` (new forest)
 - **Domain controller:** `DC-01` (also DNS) - `10.0.0.5`
 - **File server:** `FILE-SERV01`(domain joined)
+
+## Resources 
+- [Best practices for securing Active Directory](https://learn.microsoft.com/en-us/windows-server/identity/ad-ds/plan/security-best-practices/best-practices-for-securing-active-directory)
+- [Group Policy overview for Active Directory](https://learn.microsoft.com/en-us/windows-server/identity/ad-ds/manage/group-policy/group-policy-overview)
+- [Best Practices for Security and Protection of Active Directory](https://learn.microsoft.com/en-us/windows-server/identity/ad-ds/plan/security-best-practices/best-practices-for-securing-active-directory) 
