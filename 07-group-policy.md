@@ -1,6 +1,6 @@
 ## Group Policy
 
-Group Policy is where the environment gets hardened. Each policy below follows a consistent four-part format — Title, Overview, Path, Justification, Screenshot (Configured Settings)
+Group Policy is where the environment gets hardened. Each policy below follows a consistent five-part format — Title, Overview, Path, Justification, Screenshot (Configured Settings)
 
 ## How the GPOs were created
 
