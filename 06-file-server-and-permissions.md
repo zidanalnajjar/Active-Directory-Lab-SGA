@@ -20,8 +20,8 @@ For domain-join to work, the file server has to resolve `sga.local`, which means
 
 1. On the **domain controller**, get its IP address - `10.0.0.5`.
 2. On the **file server**, set the DNS server to `10.0.0.5`.
-  - `Control Panel` -> `Network and Internet` -> `Network and Sharing Center`
-  - `Change Adapter Settings` -> `Ethernet` -> `Properties`
+  - `Control Panel -> Network and Internet -> Network and Sharing Center`
+  - `Change Adapter Settings -> Ethernet -> Properties`
   - Double-click `Internet Protocol Version 4 (TCP/IPv4)`
   - Set the preferred DNS server to `10.0.0.5`
 3. Confirm the DNS was set by running `ipconfig/all` on the file server.
