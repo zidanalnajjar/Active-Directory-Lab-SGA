@@ -28,46 +28,57 @@ In Group Policy Management, right-click `sga.local` -> Create a GPO in this doma
 **Screenshot:**
 <img width="1001" height="602" alt="Screenshot 2026-07-25 at 5 57 19 PM" src="https://github.com/user-attachments/assets/a513dbf7-39de-479d-8da2-e7130921e6bf" />
 
-
+---
 ## USB Block Policy
 
 **Overview** — Denies access to all removable storage classes.
 
 **Settings** - 
+| Setting                                        | Path                                                                                                   | Value   | 
+|------------------------------------------------|--------------------------------------------------------------------------------------------------------|---------| 
+| All Removable Storage classes: Deny all access | `Computer Configuration -> Policies -> Administrative Templates -> System -> Removable Storage Access` | Enabled | 
 
 **Justification** — Blocking USB storage prevents client files from being copied off a machine and walked out the door.
 
 **Screenshot:**
 <img width="1121" height="665" alt="Screenshot 2026-07-25 at 7 45 43 PM" src="https://github.com/user-attachments/assets/bdc13225-c7f7-4209-a9a5-5f0b255e17b6" />
 
+---
 ## Disable Removable Media Policy
 
 **Overview** — Prevents removable devices from being installed at the device level.
 
-**Settings** 
-
+**Settings** -
+| Setting                                   | Path                                                                                                                                 | Value   |
+|-------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------|---------|
+| Prevent installation of removable devices | `Computer Configuration -> Policies -> Administrative Templates -> System -> Device Installation -> Device Installation Restrictions | Enabled |  
 
 **Justification** — Device-level enforcement backs up the USB block above — even if a policy is bypassed at one layer, the device simply won't install.
 
 **Screenshot:**
 <img width="998" height="601" alt="Screenshot 2026-07-25 at 7 54 52 PM" src="https://github.com/user-attachments/assets/b845717c-ce34-410e-bf9c-86ab8ce57fc5" />
 
+---
 ## Restrict Control Panel Policy
 
 **Overview** — Blocks non-IT users from opening Control Panel and PC settings.
 
 **Settings** - 
+| Setting                                          | Path                                                                          | Value   |
+|--------------------------------------------------|-------------------------------------------------------------------------------|---------|
+| Prohibit access to Control Panel and PC settings | `User Configuration -> Policies -> Administrative Templates -> Control Panel` | Enabled | 
 
 **Justification** — Regular staff shouldn't be changing system settings; keeping Control Panel out of their hands prevents accidental (or deliberate) misconfiguration.
 
 **Screenshot:**
 <img width="1247" height="711" alt="Screenshot 2026-07-25 at 7 55 26 PM" src="https://github.com/user-attachments/assets/2728ebb7-3e79-4f21-82af-cf29b6e95dc0" />
 
+---
 ## Screen Lock Policy
 
 **Overview** - Automatically locks an unattended machine after a specified period of inactivity.
 
-**Settings** 
+**Settings** - 
 | Setting                                     | Path                                                                                                               | Value                   |
 |---------------------------------------------|--------------------------------------------------------------------------------------------------------------------|-------------------------|
 | Interactive logon: Machine inactivity limit | `Computer Configuration -> Policies -> Windows Settings -> Security Settings -> Local Policies -> Security Options | 300 seconds (5 minutes) |
