@@ -24,6 +24,8 @@ In Group Policy Management, right-click `sga.local` -> Create a GPO in this doma
 
 **Path** - `Computer Configuration -> Policies -> Windows Settings -> Security Settings -> Local Policies -> Audit Policies`
 
+**Justification** - Logging access is a legal requirement for a firm handling confidential client information. Enabling these settings allows for the firm to have a audit trail.
+
 **Screenshot:**
 <img width="1001" height="602" alt="Screenshot 2026-07-25 at 5 57 19 PM" src="https://github.com/user-attachments/assets/a513dbf7-39de-479d-8da2-e7130921e6bf" />
 
