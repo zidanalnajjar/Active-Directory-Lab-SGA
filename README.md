@@ -34,4 +34,4 @@ Framing the lab around a real world-organization forced every technical decision
 ## Resources 
 - [Best practices for securing Active Directory](https://learn.microsoft.com/en-us/windows-server/identity/ad-ds/plan/security-best-practices/best-practices-for-securing-active-directory)
 - [Group Policy overview for Active Directory](https://learn.microsoft.com/en-us/windows-server/identity/ad-ds/manage/group-policy/group-policy-overview)
-- [Best Practices for Security and Protection of Active Directory](https://learn.microsoft.com/en-us/windows-server/identity/ad-ds/plan/security-best-practices/best-practices-for-securing-active-directory) 
+
