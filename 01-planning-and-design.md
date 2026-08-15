@@ -30,7 +30,7 @@ Security groups are what actually determine access. Instead of adding individual
 | `SG-ADMIN`      | Shared drive, scheduling, billing            |
 | `SG-IT`         | Full admin rights everywhere                 |  
 
-## Distrbution groups
+## Distribution groups
 Distribution groups are merely for communication.
 | Group          | Whos in it | 
 |----------------|------------------------|
