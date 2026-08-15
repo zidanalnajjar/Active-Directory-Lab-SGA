@@ -8,10 +8,6 @@ Because of the scenario, that is, being a law firm, design choices were driven b
 
 Framing the lab around a real world-organization forced every technical decision to have a reason behind it rather than being configured for its own sake. Partners can see all case files; associates can only see case files they're assigned; paralegals get read-only; billing is walled off; and IT is exempted from these constraints so that they can actually adminsister the machines. These business constraints map directly onto the OUs, security groups, NTFS permissions, and GPOs.
 
-## Architecture 
-<img width="732" height="478" alt="ad_architecture" src="https://github.com/user-attachments/assets/7cec9126-032b-44a6-8e18-7be370f94f95" />
-
-
 ## What was built
 
 - **Domain controller:** Windows Server VM, AD DS role installed and promoted to a new forest, `sga.local`.
